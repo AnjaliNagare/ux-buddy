@@ -1,0 +1,152 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Animation replacement for framer motion */
+.results-wrapper {
+  animation: fadeSlideIn 0.4s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card */
+.result-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Badge */
+.badge {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.badge-primary {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+/* Powered text */
+.powered-text {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+/* Grid */
+.result-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+/* Each suggestion item */
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-bg, #f9fafb);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* Text */
+.result-text {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Copy button */
+.copy-btn {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #f3f4f6;
+}
+
+/* Icons */
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.success {
+  color: #10b981;
+}
+
+/* Explanation */
+.result-explanation {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
